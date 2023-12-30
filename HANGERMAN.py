@@ -8,7 +8,6 @@ def play():
     collection=set()
     selected_sort=set(selected)
     lives=10
-    print(selected)
     while len(selected_sort)>0 and lives>0:
         print("YOU HAVE GUESSED THE ALPHABETS : ", " ".join(collection))
         print(f"YOU HAVE REMAINING LIVES  : {lives}")
@@ -37,7 +36,7 @@ def play():
     if lives==0:
         print(f"YOU HAVE USED ALL THE LIVES, THE WORD WAS {selected}")
     else:
-        print(f"YOU HAVE GUESSED THE WORD {selected}")
+        print(f"YOU HAVE GUESSED THE WORD {selected} !! ")
 play()
 
     
